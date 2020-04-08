@@ -49,7 +49,7 @@ public class Heap_Sort {
         a[i-1] = a[j-1];
         a[j-1] = temp;
     }
-    
+
     public static void Swim(Comparable[] a, int k)
     {
         while(k > 1 && less(a, k/2, k))
@@ -64,8 +64,13 @@ class HeapSort_Test
 {
     public static void main(String[] args) {
         Comparable[] chars = {'S','O','R','T','E','X','A','M','P','L','E'};
+        Comparable[] nums = {5,4,3,2,1};
         Heap_Sort.Sort(chars);
+        Heap_Sort.Sort(nums);
         for(Comparable a: chars)
+            System.out.print(a);
+        System.out.println();
+        for(Comparable a: nums)
             System.out.print(a);
     }
 }

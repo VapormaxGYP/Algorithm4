@@ -29,7 +29,7 @@ public class Quick_Sort {
 
         while(true)
         {
-            while(a[++i].compareTo(v) <= 0);
+            while(a[++i].compareTo(v) <= 0) if(i == hi) break;
             while(a[--j].compareTo(v) >= 0) if(j==lo) break;
             if(i >= j)
                 break;
