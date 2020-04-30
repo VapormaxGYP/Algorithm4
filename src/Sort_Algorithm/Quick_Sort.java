@@ -1,7 +1,6 @@
 package Sort_Algorithm;
 
-import java.util.concurrent.Exchanger;
-
+@SuppressWarnings("unchecked")
 public class Quick_Sort {
     public static void Sort(Comparable[] a)
     {

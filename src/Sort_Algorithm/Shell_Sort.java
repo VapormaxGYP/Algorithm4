@@ -42,7 +42,6 @@ public class Shell_Sort {
         int size = array.length;
         int h = 1;
         while(h<size/2) h = 2*h+1;
-
         while(h>0)
         {
             for(int i = h; i < size; i++)
